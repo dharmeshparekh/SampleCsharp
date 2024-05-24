@@ -30,8 +30,8 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
     
     - name: Restore NuGet packages
-      run: nuget restore BugGuardian.MVC.sln
+      run: nuget restore CodeQL.sln
     
     - name: Build the Solution
-      run: msbuild BugGuardian.MVC.sln /p:Configuration=Release
+      run: msbuild CodeQL.sln /p:Configuration=Release
     
